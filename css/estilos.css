@@ -1,0 +1,38 @@
+body{
+    font-family: 'Sarala', sans-serif;
+}
+.form{
+    width: 30vw;
+    height: 20vw;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: inline-block;
+}
+.form p{
+    width: 9vw;
+    display: inline-block;
+    margin: 0.2vw;
+}
+span{
+    float: left;
+}
+#claveR , #nombreR{
+    width: 15vw;
+}
+#principal{
+    display: flex;
+    justify-content: center;
+}
+nav{
+    background-color: lightblue;
+    margin-bottom: 2vw;
+}
+#nuevo{
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 10vw;
+}
+
+#principal{
+    display: none;
+}
