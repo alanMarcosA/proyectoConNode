@@ -1,4 +1,4 @@
-var urlCheckIn="app-datos-registros.herokuapp.com:3000/checkIn"
+var urlCheckIn="app-datos-registros.herokuapp.com/checkIn"
 var urlLogIn="https://app-datos-registros.herokuapp.com/logIn"
 var urlDatos="https://app-datos-registros.herokuapp.com/informacion"
 var urlUpdate="https://app-datos-registros.herokuapp.com/upDate"
