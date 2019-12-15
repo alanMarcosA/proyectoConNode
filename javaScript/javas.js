@@ -1,6 +1,8 @@
-var urlCheckIn="http://localhost:3000/checkIn"
-var urlLogIn="http://localhost:3000/logIn"
-var urlDatos="http://localhost:3000/informacion"
+var urlCheckIn="https://app-datos-registros.herokuapp.com:3000/checkIn"
+var urlLogIn="https://app-datos-registros.herokuapp.com:3000/logIn"
+var urlDatos="https://app-datos-registros.herokuapp.com:3000/informacion"
+var urlUpdate="https://app-datos-registros.herokuapp.com:3000/upDate"
+var urlLogOut="https://app-datos-registros.herokuapp.com:3000/logOut"
 var token=0;
 async function registrar(){
     var nombre=document.getElementById("nombreR").value;
@@ -50,12 +52,34 @@ async function getData(token){
             token:token
         }
     });
-    var contenido=await respuesta.json()
-    console.log(contenido.length)
+    //var contenido=await respuesta.json()
+    //console.log(contenido.length)
     //cargar los datos y hacer magia
 }
 async function upDate(){
     var f = new Date();
     var fecha=f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear()
-    console.log(fecha)
+    var contacto=document.getElementById("contacto").value
+    var empresa=document.getElementById("empresa").value
+    var puesto=document.getElementById("puesto").value
+    var descripcion=document.getElementById("descripcion").value
+    var respuesta= await fetch(urlUpdate,{
+        method:'POST',
+        headers:{
+            'Content-Type':'application/json',
+            token:token
+        },
+        body:JSON.stringify({empresa:empresa, contacto:contacto, puesto:puesto, descripcion:descripcion,fecha:fecha})
+    });
+    var contenido=await respuesta.json()
+}
+async function logOut(){
+    var respuesta=await fetch(urlLogOut,{
+        method:'POST',
+        headers:{
+            token:token
+        }
+    });
+    var contenido=await respuesta.json();
+    console.log(contenido.res)
 }

@@ -31,8 +31,15 @@ nav{
     border: 1px solid grey;
     border-radius: 5px;
     height: 10vw;
+    width: 90vw;
+    margin: auto;
 }
-
+#nuevo span p{
+    width: 9vw;
+    display: inline-block;
+    margin: 0.2vw;
+}
+/*
 #principal{
     display: none;
 }
