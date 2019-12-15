@@ -1,8 +1,8 @@
-var urlCheckIn="https://app-datos-registros.herokuapp.com:3000/checkIn"
-var urlLogIn="https://app-datos-registros.herokuapp.com:3000/logIn"
-var urlDatos="https://app-datos-registros.herokuapp.com:3000/informacion"
-var urlUpdate="https://app-datos-registros.herokuapp.com:3000/upDate"
-var urlLogOut="https://app-datos-registros.herokuapp.com:3000/logOut"
+var urlCheckIn="app-datos-registros.herokuapp.com:3000/checkIn"
+var urlLogIn="https://app-datos-registros.herokuapp.com/logIn"
+var urlDatos="https://app-datos-registros.herokuapp.com/informacion"
+var urlUpdate="https://app-datos-registros.herokuapp.com/upDate"
+var urlLogOut="https://app-datos-registros.herokuapp.com/logOut"
 var token=0;
 async function registrar(){
     var nombre=document.getElementById("nombreR").value;
