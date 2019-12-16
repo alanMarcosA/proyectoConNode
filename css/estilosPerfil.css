@@ -19,9 +19,13 @@ body{
 }
 #lista span p{
     display: inline-block;
+    margin:0px;
 }
 #lista div{
     border: 1px solid grey;
     border-radius: 5px;
     height: 10vw;
+}
+h2{
+    margin:0px;
 }
