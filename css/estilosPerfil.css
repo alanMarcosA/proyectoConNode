@@ -13,3 +13,13 @@ body{
     display: inline-block;
     margin: 0.2vw;
 }
+#lista{
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 10vw;
+    width: 90vw;
+    margin: auto;
+}
+#lista span p{
+    display: inline-block;
+}
