@@ -47,3 +47,7 @@ function resetImput(){
     document.getElementById("nombreL").value=""
     Document.getElementById("claveL").value=""
 }
+if(document.cookie.split('=')[1]){
+    location.href=contenido.res;
+}
+resetImput()
