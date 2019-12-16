@@ -13,7 +13,7 @@ async function getData(token){
     });
     var contenido=await respuesta.json()
     var titulo=document.querySelector('h1')
-    titulo.innerText=`${contenido.nombre}`
+    titulo.innerText=`${contenido[0].nombre}`
     var lista=document.getElementById('lista')
     for(var i=0;i<contenido.length;i++){
         lista.insertAdjacentHTML("beforeend",`
