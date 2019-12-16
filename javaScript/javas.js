@@ -30,9 +30,6 @@ async function logIn(){
         body: JSON.stringify({nombre:nombre, clave:clave})
     });
     var contenido=await respuesta.json()
-    document.cookie = `token=${contenido.token}`
-    location.href=contenido.res;
-
     if(contenido.token===0){
         alert('usuario o contraseña incorrectos')
         resetImput()
