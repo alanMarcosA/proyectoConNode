@@ -11,8 +11,20 @@ async function getData(token){
             token:token
         }
     });
-    //var contenido=await respuesta.json()
-    //console.log(contenido.length)
+    var contenido=await respuesta.json()
+    console.log(contenido.length)
+    var lista=document.getElementById('lista')
+    for(var i=0;i<contenido.length;i++){
+        lista.insertAdjacentHTML("beforeend",`
+            <div>
+                <span><p>Empresa: ${contenido[i].empresa}</p></span>
+                <span><p>Puesto: ${contenido[i].puesto}</p></span>
+                <span><p>Descripcion: ${contenido[i].descripcion}</p></span>
+                <span><p>contacto: ${contenido[i].contacto}</p></span>
+                <span><p>Fecha: ${contenido[i].fecha}</p></span>
+            </div>
+        `);
+    }
     //cargar los datos y hacer magia
 }
 async function upDate(){
