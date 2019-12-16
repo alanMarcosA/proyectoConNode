@@ -19,10 +19,10 @@ async function getData(token){
         lista.insertAdjacentHTML("beforeend",`
             <div>
                 <span><h2>${contenido[i].empresa}</h2></span>
-                <span><p>Puesto: ${contenido[i].puesto}</p></span>
-                <span><p>contacto: ${contenido[i].contacto}</p></span>
-                <span><p>Fecha: ${contenido[i].fecha}</p></span>
-                <span><p>Descripcion: ${contenido[i].descripcion}</p></span>
+                <span><p><b>Puesto:</b> ${contenido[i].puesto}</p></span>
+                <span><p><b>contacto:</b> ${contenido[i].contacto}</p></span>
+                <span><p><b>Fecha:</b> ${contenido[i].fecha}</p></span><br>
+                <span><p><b>Descripcion:</b> ${contenido[i].descripcion}</p></span>
             </div>
         `);
     }
