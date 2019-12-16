@@ -54,6 +54,7 @@ async function logOut(){
         }
     });
     var contenido=await respuesta.json();
-    console.log(contenido.res)
+    document.cookie = 'token' + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    location.href="https://app-registros.netlify.com/";
 }
 getData(token);

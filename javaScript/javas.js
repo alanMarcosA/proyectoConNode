@@ -42,5 +42,8 @@ async function logIn(){
     }
 }
 function resetImput(){
-
+    document.getElementById("nombreR").value=""
+    document.getElementById("claveR").value=""
+    document.getElementById("nombreL").value=""
+    Document.getElementById("claveL").value=""
 }
