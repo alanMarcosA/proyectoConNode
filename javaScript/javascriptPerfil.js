@@ -17,11 +17,11 @@ async function getData(token){
     for(var i=0;i<contenido.length;i++){
         lista.insertAdjacentHTML("beforeend",`
             <div>
-                <span><p>Empresa: ${contenido[i].empresa}</p></span>
+                <span><h2>${contenido[i].empresa}</h2></span>
                 <span><p>Puesto: ${contenido[i].puesto}</p></span>
-                <span><p>Descripcion: ${contenido[i].descripcion}</p></span>
                 <span><p>contacto: ${contenido[i].contacto}</p></span>
                 <span><p>Fecha: ${contenido[i].fecha}</p></span>
+                <span><p>Descripcion: ${contenido[i].descripcion}</p></span>
             </div>
         `);
     }
@@ -43,6 +43,7 @@ async function upDate(){
         body:JSON.stringify({empresa:empresa, contacto:contacto, puesto:puesto, descripcion:descripcion,fecha:fecha})
     });
     var contenido=await respuesta.json()
+    location.reload()
 }
 async function logOut(){
     var respuesta=await fetch(urlLogOut,{
