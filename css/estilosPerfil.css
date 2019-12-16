@@ -4,9 +4,10 @@ body{
 #nuevo{
     border: 1px solid grey;
     border-radius: 5px;
-    height: 10vw;
+    height: 8vw;
     width: 90vw;
     margin: auto;
+    margin-bottom: 5px;
 }
 #nuevo span p{
     width: 9vw;
