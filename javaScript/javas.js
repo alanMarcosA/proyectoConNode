@@ -34,7 +34,7 @@ async function logIn(){
         body: JSON.stringify({nombre:nombre, clave:clave})
     });
     var contenido=await respuesta.json()
-    document.cookie = "token="+contenido.token
+    document.cookie = `token=${contenido.token}`
     location.href=contenido.res;
     token=contenido.token
     console.log(token)
