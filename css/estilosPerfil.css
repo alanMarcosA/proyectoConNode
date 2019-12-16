@@ -32,3 +32,9 @@ body{
 h1{
     text-align: center;
 }
+#cerrarS{
+    background-color: grey;
+    border: 1px solid grey;
+    border-radius: 5px;
+    cursor: default;
+}
