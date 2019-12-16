@@ -42,4 +42,4 @@ async function logOut(){
     var contenido=await respuesta.json();
     console.log(contenido.res)
 }
-getData();
+getData(token);
