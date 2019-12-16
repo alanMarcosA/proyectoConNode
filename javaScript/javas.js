@@ -33,7 +33,6 @@ async function logIn(){
     if(contenido.token==0){
         alert('usuario o contraseña incorrectos')
         resetImput()
-        break
     }else{
         document.cookie = `token=${contenido.token}`
         location.href=contenido.res;
