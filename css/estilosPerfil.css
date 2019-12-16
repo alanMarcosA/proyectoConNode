@@ -26,6 +26,6 @@ body{
     border-radius: 5px;
     height: 10vw;
 }
-h2{
+#lista div span h2{
     margin:0px;
 }
