@@ -20,7 +20,7 @@ body{
 #lista span p{
     display: inline-block;
 }
-#lista span{
+#lista div{
     border: 1px solid grey;
     border-radius: 5px;
     height: 10vw;
