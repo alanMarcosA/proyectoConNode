@@ -26,6 +26,7 @@ body{
     border-radius: 5px;
     height: 10vw;
     margin-bottom: 5px;
+    padding-left: 5px;
 }
 #lista div span h2{
     margin:0px;
@@ -39,4 +40,8 @@ h1{
     border-radius: 5px;
     cursor: default;
     float: right;
+}
+nav{
+    background-color: lightblue;
+    margin-bottom: 2vw;
 }
